@@ -1,0 +1,13 @@
+{
+"manifest_version": 3,
+"name": "Yes Youtube, I'm Still Listening",
+"description": "prevents YouTube's popups when listening to music",
+"version": "1.0",
+"host_permissions": ["https://youtube.com/"],
+"content_scripts": [
+	{
+		"matches": ["*://*.youtube.com/*"],
+		"js": ["script.js"]
+	}
+]
+}
